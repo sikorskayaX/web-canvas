@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Canvas</title>
+  </head>
+  <body>
+    <header>
+      <h1>Web Canvas</h1>
+      <div class="controls">
+        <button id="btn-random-shape" class="btn" type="button">+ Случайная фигура</button>
+        <button id="btn-clear-canvas" class="btn" type="button">Очистить</button>
+        <button id="btn-export-pdf" class="btn" type="button">Экспорт PDF</button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="canvas-panel">
+        <h2>PixiJS</h2>
+        <div id="pixi-root"></div>
+      </section>
+      <section class="canvas-panel">
+        <h2>Skia (CanvasKit)</h2>
+        <div id="skia-root"></div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

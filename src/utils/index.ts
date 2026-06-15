@@ -1,0 +1,6 @@
+export { CanvasSizeCalculator } from './CanvasSizeCalculator.ts'
+export { ColorConverter } from './ColorConverter.ts'
+export { HIGHLIGHT_BORDER, getPaddedHighlightRect } from './HighlightBorder.ts'
+export type { BoundsRect } from './HighlightBorder.ts'
+export type { IRandomProvider } from './IRandomProvider.ts'
+export { MathRandomProvider } from './MathRandomProvider.ts'
