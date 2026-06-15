@@ -29,13 +29,16 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
+        with:
+          enablement: true
+
       - name: Build
         run: npm run build
         env:
-          GITHUB_PAGES: true
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
